@@ -25,7 +25,6 @@ class Scheduler():
         self.credentials = open('credentials.txt', 'r')
         self.username = self.credentials.readline()
         self.password = self.credentials.readline()
-        self.credentials.close()
 
         options = webdriver.ChromeOptions()
         options.binary_location = r'D:\Program Files\Google\Chrome\Application\chrome.exe'
